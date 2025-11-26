@@ -9,6 +9,9 @@ pnpm-debug.log*
 dist/
 build/
 *.tsbuildinfo
+discls/
+app1-kiro-marketplace/dist/
+app2-devops-hub/dist/
 
 # Environment variables
 .env
