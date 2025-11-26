@@ -1,0 +1,78 @@
+{
+  "id": "test-driven-development-coach",
+  "name": "Test-Driven Development Coach",
+  "version": "1.0.0",
+  "description": "Expert agent for practicing test-driven development with comprehensive testing strategies",
+  "longDescription": "Transform your Kiro into a TDD expert! This agent bundle guides you through test-driven development practices, helping you write tests first and build robust, well-tested code. Includes guidance on unit testing, integration testing, test organization, mocking strategies, and property-based testing. Perfect for developers who want to improve code quality and adopt TDD practices.",
+  "author": {
+    "name": "Haunted Agents Team",
+    "email": "team@haunted-agents.dev",
+    "url": "https://github.com/haunted-agents"
+  },
+  "tags": [
+    "Testing",
+    "TDD",
+    "Unit Tests",
+    "Integration Tests",
+    "Quality",
+    "Best Practices",
+    "Jest",
+    "Vitest"
+  ],
+  "categories": [
+    "testing",
+    "quality"
+  ],
+  "previewImage": "/images/test-driven-development-coach.png",
+  "components": {
+    "steeringFiles": [
+      {
+        "filename": "tdd-best-practices.md",
+        "inclusion": "always"
+      }
+    ],
+    "hooks": [
+      {
+        "name": "run-tests-on-save",
+        "trigger": "onSave",
+        "action": "command",
+        "content": "npm test -- --run"
+      }
+    ],
+    "specTemplates": [
+      {
+        "name": "Test-First Development Spec",
+        "type": "requirements",
+        "filename": "test-first-requirements.md"
+      },
+      {
+        "name": "Testing Strategy Design",
+        "type": "design",
+        "filename": "testing-strategy-design.md"
+      }
+    ]
+  },
+  "dependencies": {
+    "external": ["Node.js 18+", "npm or yarn", "Jest or Vitest"],
+    "kiroVersion": "1.0.0"
+  },
+  "examples": [
+    {
+      "title": "Write Unit Tests First",
+      "description": "Create comprehensive unit tests before implementing functionality",
+      "prompt": "Help me write unit tests for a user authentication function that validates email and password, then implement the function to pass the tests"
+    },
+    {
+      "title": "Create Integration Tests",
+      "description": "Build integration tests for API endpoints",
+      "prompt": "Write integration tests for my REST API user endpoints (create, read, update, delete) with proper setup and teardown"
+    },
+    {
+      "title": "Implement Property-Based Tests",
+      "description": "Use property-based testing for comprehensive coverage",
+      "prompt": "Create property-based tests for my sorting algorithm that verify it works correctly for any input array"
+    }
+  ],
+  "createdAt": "2025-11-25T00:00:00Z",
+  "updatedAt": "2025-11-25T00:00:00Z"
+}

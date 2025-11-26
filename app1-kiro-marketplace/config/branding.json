@@ -1,0 +1,32 @@
+{
+  "name": "Kiro Agents Marketplace",
+  "logo": "/images/kiro-logo.svg",
+  "primaryColor": "#6366f1",
+  "secondaryColor": "#8b5cf6",
+  "accentColor": "#ec4899",
+  "tagline": "Supercharge your Kiro IDE with specialized AI agents",
+  "description": "Discover, install, and share powerful AI agent bundles that transform your Kiro development environment for any use case.",
+  "footer": {
+    "copyright": "© 2025 Kiro Agents Marketplace",
+    "links": [
+      {
+        "text": "Documentation",
+        "url": "https://github.com/haunted-agents/marketplace/docs"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/haunted-agents/marketplace"
+      },
+      {
+        "text": "Community",
+        "url": "https://discord.gg/kiro-agents"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Transform Your Kiro IDE",
+    "subtitle": "Install specialized AI agents in seconds",
+    "ctaText": "Browse Agents",
+    "backgroundGradient": "from-indigo-500 via-purple-500 to-pink-500"
+  }
+}

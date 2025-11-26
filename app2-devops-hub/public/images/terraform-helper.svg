@@ -1,0 +1,21 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b42bc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a32a3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#tfGradient)"/>
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Terraform</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">Helper</text>
+  <rect x="150" y="180" width="100" height="80" fill="none" stroke="white" stroke-width="3" opacity="0.8" rx="5"/>
+  <text x="200" y="210" font-family="monospace" font-size="14" fill="white" text-anchor="middle">resource</text>
+  <text x="200" y="230" font-family="monospace" font-size="14" fill="white" text-anchor="middle">"aws_vpc"</text>
+  <text x="200" y="250" font-family="monospace" font-size="14" fill="white" text-anchor="middle">"main" {</text>
+  <circle cx="80" cy="220" r="15" fill="white" opacity="0.6"/>
+  <circle cx="320" cy="220" r="15" fill="white" opacity="0.6"/>
+  <line x1="95" y1="220" x2="150" y2="220" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="250" y1="220" x2="305" y2="220" stroke="white" stroke-width="2" opacity="0.6"/>
+  <text x="80" y="255" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Code</text>
+  <text x="320" y="255" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Cloud</text>
+</svg>

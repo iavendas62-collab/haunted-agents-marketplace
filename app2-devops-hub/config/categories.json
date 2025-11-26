@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "cicd",
+      "name": "CI/CD",
+      "icon": "🔄",
+      "description": "Continuous integration and deployment pipelines"
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "icon": "🏗️",
+      "description": "Infrastructure as code, cloud resources, and provisioning"
+    },
+    {
+      "id": "monitoring",
+      "name": "Monitoring & Observability",
+      "icon": "📊",
+      "description": "Monitoring, logging, alerting, and observability tools"
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "icon": "🤖",
+      "description": "DevOps automation, scripting, and workflow optimization"
+    },
+    {
+      "id": "security",
+      "name": "Security & Compliance",
+      "icon": "🔒",
+      "description": "Security scanning, compliance checks, and vulnerability management"
+    },
+    {
+      "id": "containers",
+      "name": "Containers & Orchestration",
+      "icon": "📦",
+      "description": "Docker, Kubernetes, and container orchestration"
+    }
+  ]
+}

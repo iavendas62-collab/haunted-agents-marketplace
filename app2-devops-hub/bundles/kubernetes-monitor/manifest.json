@@ -1,0 +1,71 @@
+{
+  "id": "kubernetes-monitor",
+  "name": "Kubernetes Monitor",
+  "version": "1.0.0",
+  "description": "Expert agent for monitoring, debugging, and managing Kubernetes clusters",
+  "longDescription": "Transform your Kiro into a Kubernetes expert! This agent bundle provides comprehensive guidance for monitoring, troubleshooting, and managing Kubernetes clusters. Includes best practices for observability, resource management, deployment validation, and incident response. Perfect for DevOps engineers and SREs managing containerized applications at scale.",
+  "author": {
+    "name": "Haunted Agents Team",
+    "email": "team@haunted-agents.dev",
+    "url": "https://github.com/haunted-agents"
+  },
+  "tags": [
+    "Kubernetes",
+    "K8s",
+    "DevOps",
+    "Monitoring",
+    "Observability",
+    "Container",
+    "Orchestration",
+    "SRE"
+  ],
+  "categories": [
+    "infrastructure",
+    "monitoring"
+  ],
+  "previewImage": "/images/kubernetes-monitor.png",
+  "components": {
+    "steeringFiles": [
+      {
+        "filename": "k8s-monitoring-patterns.md",
+        "inclusion": "always"
+      }
+    ],
+    "hooks": [
+      {
+        "name": "validate-deployment",
+        "trigger": "onSave",
+        "action": "command",
+        "content": "kubectl apply --dry-run=client -f"
+      }
+    ]
+  },
+  "dependencies": {
+    "external": ["kubectl", "Kubernetes cluster access"],
+    "kiroVersion": "1.0.0"
+  },
+  "examples": [
+    {
+      "title": "Debug Pod Issues",
+      "description": "Troubleshoot pods that are crashing or not starting",
+      "prompt": "My pod is in CrashLoopBackOff state. Help me debug what's wrong and fix it"
+    },
+    {
+      "title": "Set Up Monitoring",
+      "description": "Configure comprehensive monitoring for your cluster",
+      "prompt": "Help me set up Prometheus and Grafana for monitoring my Kubernetes cluster with key metrics and alerts"
+    },
+    {
+      "title": "Optimize Resource Usage",
+      "description": "Analyze and optimize resource requests and limits",
+      "prompt": "Review my deployment manifests and suggest optimal resource requests and limits based on actual usage"
+    },
+    {
+      "title": "Validate Deployment",
+      "description": "Check deployment configuration before applying",
+      "prompt": "Validate this Kubernetes deployment manifest and check for common issues and best practices"
+    }
+  ],
+  "createdAt": "2025-11-25T00:00:00Z",
+  "updatedAt": "2025-11-25T00:00:00Z"
+}

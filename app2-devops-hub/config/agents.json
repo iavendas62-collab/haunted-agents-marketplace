@@ -1,0 +1,219 @@
+{
+  "version": "1.0.0",
+  "featured": [
+    "cicd-pipeline-template",
+    "kubernetes-monitor",
+    "terraform-helper"
+  ],
+  "bundles": [
+    {
+      "id": "cicd-pipeline-template",
+      "name": "CI/CD Pipeline Template",
+      "version": "1.0.0",
+      "description": "Expert agent for designing and implementing CI/CD pipelines across multiple platforms",
+      "longDescription": "Transform your Kiro into a CI/CD expert! This agent bundle provides comprehensive guidance for building robust continuous integration and deployment pipelines. Includes best practices for GitHub Actions, GitLab CI, Jenkins, and CircleCI. Perfect for DevOps engineers and developers looking to automate their software delivery process with industry-standard patterns.",
+      "author": {
+        "name": "Haunted Agents Team",
+        "email": "team@haunted-agents.dev",
+        "url": "https://github.com/haunted-agents"
+      },
+      "tags": [
+        "CI/CD",
+        "DevOps",
+        "GitHub Actions",
+        "GitLab CI",
+        "Jenkins",
+        "Automation",
+        "Deployment",
+        "Testing"
+      ],
+      "categories": [
+        "cicd",
+        "automation"
+      ],
+      "previewImage": "/images/cicd-pipeline-template.svg",
+      "components": {
+        "steeringFiles": [
+          {
+            "filename": "cicd-best-practices.md",
+            "inclusion": "always"
+          }
+        ],
+        "specTemplates": [
+          {
+            "name": "pipeline-configuration",
+            "type": "requirements",
+            "filename": "pipeline-requirements.md"
+          }
+        ]
+      },
+      "dependencies": {
+        "external": ["Git", "CI/CD platform (GitHub Actions, GitLab CI, etc.)"],
+        "kiroVersion": "1.0.0"
+      },
+      "examples": [
+        {
+          "title": "GitHub Actions Workflow",
+          "description": "Create a complete CI/CD workflow with testing, building, and deployment",
+          "prompt": "Help me create a GitHub Actions workflow that runs tests, builds a Docker image, and deploys to AWS ECS"
+        },
+        {
+          "title": "Multi-Stage Pipeline",
+          "description": "Design a pipeline with development, staging, and production stages",
+          "prompt": "Design a multi-stage CI/CD pipeline with automated testing in dev, manual approval for staging, and blue-green deployment to production"
+        },
+        {
+          "title": "Pipeline Optimization",
+          "description": "Optimize existing pipeline for speed and reliability",
+          "prompt": "Review my current CI/CD pipeline and suggest optimizations for faster builds and better caching strategies"
+        }
+      ],
+      "downloadUrl": "https://github.com/haunted-agents/devops-hub/releases/download/v1.0.0/cicd-pipeline-template.zip",
+      "createdAt": "2025-11-25T00:00:00Z",
+      "updatedAt": "2025-11-25T00:00:00Z"
+    },
+    {
+      "id": "kubernetes-monitor",
+      "name": "Kubernetes Monitor",
+      "version": "1.0.0",
+      "description": "Expert agent for monitoring, debugging, and managing Kubernetes clusters",
+      "longDescription": "Transform your Kiro into a Kubernetes expert! This agent bundle provides comprehensive guidance for monitoring, troubleshooting, and managing Kubernetes clusters. Includes best practices for observability, resource management, deployment validation, and incident response. Perfect for DevOps engineers and SREs managing containerized applications at scale.",
+      "author": {
+        "name": "Haunted Agents Team",
+        "email": "team@haunted-agents.dev",
+        "url": "https://github.com/haunted-agents"
+      },
+      "tags": [
+        "Kubernetes",
+        "K8s",
+        "DevOps",
+        "Monitoring",
+        "Observability",
+        "Container",
+        "Orchestration",
+        "SRE"
+      ],
+      "categories": [
+        "infrastructure",
+        "monitoring"
+      ],
+      "previewImage": "/images/kubernetes-monitor.svg",
+      "components": {
+        "steeringFiles": [
+          {
+            "filename": "k8s-monitoring-patterns.md",
+            "inclusion": "always"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "validate-deployment",
+            "trigger": "onSave",
+            "action": "command",
+            "content": "kubectl apply --dry-run=client -f"
+          }
+        ]
+      },
+      "dependencies": {
+        "external": ["kubectl", "Kubernetes cluster access"],
+        "kiroVersion": "1.0.0"
+      },
+      "examples": [
+        {
+          "title": "Debug Pod Issues",
+          "description": "Troubleshoot pods that are crashing or not starting",
+          "prompt": "My pod is in CrashLoopBackOff state. Help me debug what's wrong and fix it"
+        },
+        {
+          "title": "Set Up Monitoring",
+          "description": "Configure comprehensive monitoring for your cluster",
+          "prompt": "Help me set up Prometheus and Grafana for monitoring my Kubernetes cluster with key metrics and alerts"
+        },
+        {
+          "title": "Optimize Resource Usage",
+          "description": "Analyze and optimize resource requests and limits",
+          "prompt": "Review my deployment manifests and suggest optimal resource requests and limits based on actual usage"
+        },
+        {
+          "title": "Validate Deployment",
+          "description": "Check deployment configuration before applying",
+          "prompt": "Validate this Kubernetes deployment manifest and check for common issues and best practices"
+        }
+      ],
+      "downloadUrl": "https://github.com/haunted-agents/devops-hub/releases/download/v1.0.0/kubernetes-monitor.zip",
+      "createdAt": "2025-11-25T00:00:00Z",
+      "updatedAt": "2025-11-25T00:00:00Z"
+    },
+    {
+      "id": "terraform-helper",
+      "name": "Terraform Helper",
+      "version": "1.0.0",
+      "description": "Expert agent for writing, testing, and managing infrastructure as code with Terraform",
+      "longDescription": "Transform your Kiro into a Terraform expert! This agent bundle provides comprehensive guidance for infrastructure as code with Terraform. Includes best practices for module design, state management, testing strategies, and multi-cloud deployments. Perfect for DevOps engineers and infrastructure teams building scalable, maintainable infrastructure.",
+      "author": {
+        "name": "Haunted Agents Team",
+        "email": "team@haunted-agents.dev",
+        "url": "https://github.com/haunted-agents"
+      },
+      "tags": [
+        "Terraform",
+        "Infrastructure as Code",
+        "IaC",
+        "DevOps",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Cloud"
+      ],
+      "categories": [
+        "infrastructure",
+        "automation"
+      ],
+      "previewImage": "/images/terraform-helper.svg",
+      "components": {
+        "steeringFiles": [
+          {
+            "filename": "terraform-best-practices.md",
+            "inclusion": "always"
+          }
+        ],
+        "specTemplates": [
+          {
+            "name": "infrastructure-spec",
+            "type": "requirements",
+            "filename": "infrastructure-requirements.md"
+          }
+        ]
+      },
+      "dependencies": {
+        "external": ["Terraform 1.0+", "Cloud provider CLI (aws-cli, az, gcloud)"],
+        "kiroVersion": "1.0.0"
+      },
+      "examples": [
+        {
+          "title": "Create AWS Infrastructure",
+          "description": "Design and implement AWS infrastructure with Terraform",
+          "prompt": "Help me create Terraform modules for a production AWS environment with VPC, ECS, RDS, and load balancer"
+        },
+        {
+          "title": "Refactor to Modules",
+          "description": "Refactor existing Terraform code into reusable modules",
+          "prompt": "Review my Terraform configuration and help me refactor it into reusable modules with proper variable design"
+        },
+        {
+          "title": "Multi-Environment Setup",
+          "description": "Set up Terraform for multiple environments (dev, staging, prod)",
+          "prompt": "Design a Terraform workspace structure for managing dev, staging, and production environments with shared modules"
+        },
+        {
+          "title": "State Management",
+          "description": "Configure remote state and state locking",
+          "prompt": "Help me set up remote state in S3 with DynamoDB locking and proper backend configuration"
+        }
+      ],
+      "downloadUrl": "https://github.com/haunted-agents/devops-hub/releases/download/v1.0.0/terraform-helper.zip",
+      "createdAt": "2025-11-25T00:00:00Z",
+      "updatedAt": "2025-11-25T00:00:00Z"
+    }
+  ]
+}

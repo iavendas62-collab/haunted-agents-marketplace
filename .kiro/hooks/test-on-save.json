@@ -1,0 +1,65 @@
+{
+  "name": "Run Tests on Save",
+  "description": "Automatically runs tests when TypeScript or JavaScript files are saved",
+  "version": "1.0.0",
+  "hooks": [
+    {
+      "id": "test-on-save-ts",
+      "name": "Test TypeScript Files",
+      "trigger": "onFileSave",
+      "conditions": {
+        "filePattern": "**/*.{ts,tsx}",
+        "excludePattern": "**/*.test.{ts,tsx}"
+      },
+      "action": {
+        "type": "command",
+        "command": "npm test -- --run --reporter=verbose",
+        "cwd": "${workspaceFolder}",
+        "showOutput": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "test-on-save-js",
+      "name": "Test JavaScript Files",
+      "trigger": "onFileSave",
+      "conditions": {
+        "filePattern": "**/*.{js,jsx}",
+        "excludePattern": "**/*.test.{js,jsx}"
+      },
+      "action": {
+        "type": "command",
+        "command": "npm test -- --run --reporter=verbose",
+        "cwd": "${workspaceFolder}",
+        "showOutput": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "test-specific-on-save",
+      "name": "Run Specific Test File",
+      "trigger": "onFileSave",
+      "conditions": {
+        "filePattern": "**/*.test.{ts,tsx,js,jsx}"
+      },
+      "action": {
+        "type": "command",
+        "command": "npm test -- --run ${file}",
+        "cwd": "${workspaceFolder}",
+        "showOutput": true
+      },
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "debounceMs": 500,
+    "runInBackground": false,
+    "notifyOnSuccess": false,
+    "notifyOnFailure": true
+  },
+  "metadata": {
+    "author": "Haunted Agents Marketplace",
+    "tags": ["testing", "automation", "tdd"],
+    "documentation": "This hook automatically runs tests when you save files, providing immediate feedback during development. It's especially useful for test-driven development workflows."
+  }
+}

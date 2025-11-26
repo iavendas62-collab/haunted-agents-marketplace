@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "icon": "🎨",
+      "description": "React, Vue, Angular, and modern frontend frameworks"
+    },
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "icon": "⚙️",
+      "description": "APIs, databases, server-side logic, and backend services"
+    },
+    {
+      "id": "testing",
+      "name": "Testing & Quality",
+      "icon": "✅",
+      "description": "Unit tests, integration tests, TDD, and quality assurance"
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation",
+      "icon": "📚",
+      "description": "API docs, technical writing, and developer documentation"
+    },
+    {
+      "id": "quality",
+      "name": "Code Quality",
+      "icon": "⭐",
+      "description": "Best practices, code review, and quality standards"
+    },
+    {
+      "id": "full-stack",
+      "name": "Full-Stack",
+      "icon": "🚀",
+      "description": "End-to-end development with frontend and backend"
+    }
+  ]
+}

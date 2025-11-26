@@ -1,0 +1,28 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3ecf8e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad1)"/>
+  
+  <!-- React logo simplified -->
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <ellipse cx="150" cy="150" rx="80" ry="30" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <ellipse cx="150" cy="150" rx="80" ry="30" fill="none" stroke="#ffffff" stroke-width="3" transform="rotate(60 150 150)"/>
+  <ellipse cx="150" cy="150" rx="80" ry="30" fill="none" stroke="#ffffff" stroke-width="3" transform="rotate(120 150 150)"/>
+  <circle cx="150" cy="150" r="8" fill="#ffffff"/>
+  
+  <!-- Supabase icon simplified -->
+  <rect x="240" y="120" width="60" height="60" rx="10" fill="#ffffff" opacity="0.9"/>
+  <path d="M 260 135 L 270 155 L 280 135 Z" fill="#3ecf8e"/>
+  <rect x="265" y="155" width="10" height="15" fill="#3ecf8e"/>
+  
+  <!-- Text -->
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">React + Supabase</text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.9">Full-Stack Expert</text>
+</svg>

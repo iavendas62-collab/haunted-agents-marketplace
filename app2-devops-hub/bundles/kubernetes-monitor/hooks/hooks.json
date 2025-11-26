@@ -1,0 +1,18 @@
+{
+  "hooks": [
+    {
+      "id": "validate-k8s-manifest",
+      "name": "Validate Kubernetes Manifest",
+      "description": "Automatically validate Kubernetes manifests when YAML files are saved",
+      "trigger": {
+        "type": "onSave",
+        "filePattern": "**/*.{yaml,yml}"
+      },
+      "action": {
+        "type": "command",
+        "command": "kubectl apply --dry-run=client -f ${file}"
+      },
+      "enabled": true
+    }
+  ]
+}

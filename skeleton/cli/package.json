@@ -1,0 +1,68 @@
+{
+  "name": "@haunted-agents/cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing Haunted Agent bundles - Install, create, and manage AI agent configurations for Kiro IDE",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "kiro-agent": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "kiro",
+    "agents",
+    "cli",
+    "marketplace",
+    "ai",
+    "mcp",
+    "agent-bundles",
+    "kiro-ide",
+    "development-tools"
+  ],
+  "author": "Haunted Agents Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/haunted-agents-marketplace.git",
+    "directory": "skeleton/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/haunted-agents-marketplace/issues"
+  },
+  "homepage": "https://github.com/yourusername/haunted-agents-marketplace#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "archiver": "^6.0.1",
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/archiver": "^6.0.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.5",
+    "adm-zip": "^0.5.16",
+    "fast-check": "^4.3.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  }
+}

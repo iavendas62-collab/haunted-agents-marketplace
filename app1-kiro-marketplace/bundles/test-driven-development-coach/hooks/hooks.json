@@ -1,0 +1,10 @@
+{
+  "hooks": [
+    {
+      "name": "run-tests-on-save",
+      "trigger": "onSave",
+      "action": "command",
+      "content": "npm test -- --run"
+    }
+  ]
+}

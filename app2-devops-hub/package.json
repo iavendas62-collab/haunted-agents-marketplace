@@ -1,0 +1,13 @@
+{
+  "name": "app2-devops-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DevOps Automation Hub - Application 2",
+  "scripts": {
+    "prebuild": "cd ../skeleton/web && npm install",
+    "build": "cd ../skeleton/web && npm run build && cd ../../app2-devops-hub && npm run copy-config",
+    "copy-config": "node ../scripts/copy-config.js app2",
+    "dev": "cd ../skeleton/web && npm run dev",
+    "preview": "cd ../skeleton/web && npm run preview"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "DevOps Automation Hub",
+  "logo": "/images/devops-logo.svg",
+  "primaryColor": "#10b981",
+  "secondaryColor": "#059669",
+  "accentColor": "#f59e0b",
+  "tagline": "Automate your infrastructure with specialized DevOps agents",
+  "description": "Discover, install, and share powerful DevOps automation bundles that transform your Kiro development environment for infrastructure, CI/CD, and cloud operations.",
+  "footer": {
+    "copyright": "© 2025 DevOps Automation Hub",
+    "links": [
+      {
+        "text": "Documentation",
+        "url": "https://github.com/haunted-agents/devops-hub/docs"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/haunted-agents/devops-hub"
+      },
+      {
+        "text": "Community",
+        "url": "https://discord.gg/devops-hub"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Automate Your Infrastructure",
+    "subtitle": "Install specialized DevOps agents in seconds",
+    "ctaText": "Browse Agents",
+    "backgroundGradient": "from-emerald-500 via-green-500 to-teal-500"
+  }
+}

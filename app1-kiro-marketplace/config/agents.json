@@ -1,0 +1,237 @@
+{
+  "version": "1.0.0",
+  "featured": [
+    "react-supabase-expert",
+    "api-documentation-wizard",
+    "test-driven-development-coach"
+  ],
+  "bundles": [
+    {
+      "id": "react-supabase-expert",
+      "name": "React + Supabase Expert",
+      "version": "1.0.0",
+      "description": "Expert agent for building React applications with Supabase backend",
+      "longDescription": "Transform your Kiro into a React + Supabase expert! This agent bundle provides comprehensive guidance for building modern React applications with Supabase as your backend. Includes best practices for authentication, real-time subscriptions, database queries, and React component patterns. Perfect for full-stack developers building scalable web applications.",
+      "author": {
+        "name": "Haunted Agents Team",
+        "email": "team@haunted-agents.dev",
+        "url": "https://github.com/haunted-agents"
+      },
+      "tags": [
+        "React",
+        "Supabase",
+        "Frontend",
+        "Backend",
+        "Full-Stack",
+        "TypeScript",
+        "Authentication",
+        "Database"
+      ],
+      "categories": [
+        "frontend",
+        "backend"
+      ],
+      "previewImage": "/images/react-supabase-expert.svg",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "supabase-mcp",
+            "command": "uvx",
+            "args": ["supabase-mcp-server"],
+            "env": {
+              "SUPABASE_URL": "${SUPABASE_URL}",
+              "SUPABASE_KEY": "${SUPABASE_KEY}"
+            }
+          }
+        ],
+        "steeringFiles": [
+          {
+            "filename": "react-supabase-best-practices.md",
+            "inclusion": "always"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "test-on-save",
+            "trigger": "onSave",
+            "action": "command",
+            "content": "npm test -- --run"
+          }
+        ]
+      },
+      "dependencies": {
+        "external": ["Node.js 18+", "npm or yarn"],
+        "kiroVersion": "1.0.0"
+      },
+      "examples": [
+        {
+          "title": "Create Authentication Flow",
+          "description": "Build a complete user authentication system with email/password and social providers",
+          "prompt": "Help me create a React authentication flow with Supabase that includes email/password login, Google OAuth, and protected routes"
+        },
+        {
+          "title": "Real-time Data Subscription",
+          "description": "Implement real-time data updates using Supabase subscriptions",
+          "prompt": "Show me how to set up real-time subscriptions in React to listen for database changes in my todos table"
+        },
+        {
+          "title": "Database CRUD Operations",
+          "description": "Create type-safe CRUD operations with React hooks",
+          "prompt": "Help me create custom React hooks for CRUD operations on my Supabase database with TypeScript types"
+        }
+      ],
+      "downloadUrl": "https://github.com/haunted-agents/marketplace/releases/download/v1.0.0/react-supabase-expert.zip",
+      "createdAt": "2025-11-25T00:00:00Z",
+      "updatedAt": "2025-11-25T00:00:00Z"
+    },
+    {
+      "id": "api-documentation-wizard",
+      "name": "API Documentation Wizard",
+      "version": "1.0.0",
+      "description": "Expert agent for creating comprehensive API documentation and OpenAPI specifications",
+      "longDescription": "Transform your Kiro into an API documentation expert! This agent bundle helps you create clear, comprehensive API documentation following industry best practices. Includes guidance for OpenAPI/Swagger specs, REST API design patterns, authentication documentation, and interactive API examples. Perfect for backend developers and API designers who want to create developer-friendly documentation.",
+      "author": {
+        "name": "Haunted Agents Team",
+        "email": "team@haunted-agents.dev",
+        "url": "https://github.com/haunted-agents"
+      },
+      "tags": [
+        "API",
+        "Documentation",
+        "OpenAPI",
+        "Swagger",
+        "REST",
+        "Backend",
+        "Developer Experience"
+      ],
+      "categories": [
+        "backend",
+        "documentation"
+      ],
+      "previewImage": "/images/api-documentation-wizard.svg",
+      "components": {
+        "steeringFiles": [
+          {
+            "filename": "api-documentation-patterns.md",
+            "inclusion": "always"
+          }
+        ],
+        "specTemplates": [
+          {
+            "name": "API Endpoint Specification",
+            "type": "requirements",
+            "filename": "api-endpoint-requirements.md"
+          },
+          {
+            "name": "API Design Document",
+            "type": "design",
+            "filename": "api-design.md"
+          }
+        ]
+      },
+      "dependencies": {
+        "external": ["Node.js 18+"],
+        "kiroVersion": "1.0.0"
+      },
+      "examples": [
+        {
+          "title": "Create OpenAPI Specification",
+          "description": "Generate a complete OpenAPI 3.0 specification for your REST API",
+          "prompt": "Help me create an OpenAPI 3.0 specification for a user management API with authentication, CRUD operations, and pagination"
+        },
+        {
+          "title": "Document Authentication Flow",
+          "description": "Create clear documentation for API authentication and authorization",
+          "prompt": "Document the OAuth 2.0 authentication flow for my API, including token refresh and error handling"
+        },
+        {
+          "title": "Generate API Examples",
+          "description": "Create comprehensive request/response examples for API endpoints",
+          "prompt": "Generate example requests and responses for my REST API endpoints with different scenarios including success, validation errors, and authentication failures"
+        }
+      ],
+      "downloadUrl": "https://github.com/haunted-agents/marketplace/releases/download/v1.0.0/api-documentation-wizard.zip",
+      "createdAt": "2025-11-25T00:00:00Z",
+      "updatedAt": "2025-11-25T00:00:00Z"
+    },
+    {
+      "id": "test-driven-development-coach",
+      "name": "Test-Driven Development Coach",
+      "version": "1.0.0",
+      "description": "Expert agent for practicing test-driven development with comprehensive testing strategies",
+      "longDescription": "Transform your Kiro into a TDD expert! This agent bundle guides you through test-driven development practices, helping you write tests first and build robust, well-tested code. Includes guidance on unit testing, integration testing, test organization, mocking strategies, and property-based testing. Perfect for developers who want to improve code quality and adopt TDD practices.",
+      "author": {
+        "name": "Haunted Agents Team",
+        "email": "team@haunted-agents.dev",
+        "url": "https://github.com/haunted-agents"
+      },
+      "tags": [
+        "Testing",
+        "TDD",
+        "Unit Tests",
+        "Integration Tests",
+        "Quality",
+        "Best Practices",
+        "Jest",
+        "Vitest"
+      ],
+      "categories": [
+        "testing",
+        "quality"
+      ],
+      "previewImage": "/images/test-driven-development-coach.svg",
+      "components": {
+        "steeringFiles": [
+          {
+            "filename": "tdd-best-practices.md",
+            "inclusion": "always"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "run-tests-on-save",
+            "trigger": "onSave",
+            "action": "command",
+            "content": "npm test -- --run"
+          }
+        ],
+        "specTemplates": [
+          {
+            "name": "Test-First Development Spec",
+            "type": "requirements",
+            "filename": "test-first-requirements.md"
+          },
+          {
+            "name": "Testing Strategy Design",
+            "type": "design",
+            "filename": "testing-strategy-design.md"
+          }
+        ]
+      },
+      "dependencies": {
+        "external": ["Node.js 18+", "npm or yarn", "Jest or Vitest"],
+        "kiroVersion": "1.0.0"
+      },
+      "examples": [
+        {
+          "title": "Write Unit Tests First",
+          "description": "Create comprehensive unit tests before implementing functionality",
+          "prompt": "Help me write unit tests for a user authentication function that validates email and password, then implement the function to pass the tests"
+        },
+        {
+          "title": "Create Integration Tests",
+          "description": "Build integration tests for API endpoints",
+          "prompt": "Write integration tests for my REST API user endpoints (create, read, update, delete) with proper setup and teardown"
+        },
+        {
+          "title": "Implement Property-Based Tests",
+          "description": "Use property-based testing for comprehensive coverage",
+          "prompt": "Create property-based tests for my sorting algorithm that verify it works correctly for any input array"
+        }
+      ],
+      "downloadUrl": "https://github.com/haunted-agents/marketplace/releases/download/v1.0.0/test-driven-development-coach.zip",
+      "createdAt": "2025-11-25T00:00:00Z",
+      "updatedAt": "2025-11-25T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+# Source files (only publish dist/)
+src/
+*.ts
+!*.d.ts
+
+# Tests
+*.test.ts
+*.test.js
+__tests__/
+coverage/
+.nyc_output/
+
+# Development files
+tsconfig.json
+vitest.config.ts
+.eslintrc*
+.prettierrc*
+
+# Documentation (keep README.md)
+PUBLISHING.md
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+*.tgz
+
+# Misc
+.env
+.env.local
+.env.*.local

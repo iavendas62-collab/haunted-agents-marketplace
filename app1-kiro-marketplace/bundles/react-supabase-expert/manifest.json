@@ -1,0 +1,77 @@
+{
+  "id": "react-supabase-expert",
+  "name": "React + Supabase Expert",
+  "version": "1.0.0",
+  "description": "Expert agent for building React applications with Supabase backend",
+  "longDescription": "Transform your Kiro into a React + Supabase expert! This agent bundle provides comprehensive guidance for building modern React applications with Supabase as your backend. Includes best practices for authentication, real-time subscriptions, database queries, and React component patterns. Perfect for full-stack developers building scalable web applications.",
+  "author": {
+    "name": "Haunted Agents Team",
+    "email": "team@haunted-agents.dev",
+    "url": "https://github.com/haunted-agents"
+  },
+  "tags": [
+    "React",
+    "Supabase",
+    "Frontend",
+    "Backend",
+    "Full-Stack",
+    "TypeScript",
+    "Authentication",
+    "Database"
+  ],
+  "categories": [
+    "frontend",
+    "backend"
+  ],
+  "previewImage": "/images/react-supabase-expert.png",
+  "components": {
+    "mcpServers": [
+      {
+        "name": "supabase-mcp",
+        "command": "uvx",
+        "args": ["supabase-mcp-server"],
+        "env": {
+          "SUPABASE_URL": "${SUPABASE_URL}",
+          "SUPABASE_KEY": "${SUPABASE_KEY}"
+        }
+      }
+    ],
+    "steeringFiles": [
+      {
+        "filename": "react-supabase-best-practices.md",
+        "inclusion": "always"
+      }
+    ],
+    "hooks": [
+      {
+        "name": "test-on-save",
+        "trigger": "onSave",
+        "action": "command",
+        "content": "npm test -- --run"
+      }
+    ]
+  },
+  "dependencies": {
+    "external": ["Node.js 18+", "npm or yarn"],
+    "kiroVersion": "1.0.0"
+  },
+  "examples": [
+    {
+      "title": "Create Authentication Flow",
+      "description": "Build a complete user authentication system with email/password and social providers",
+      "prompt": "Help me create a React authentication flow with Supabase that includes email/password login, Google OAuth, and protected routes"
+    },
+    {
+      "title": "Real-time Data Subscription",
+      "description": "Implement real-time data updates using Supabase subscriptions",
+      "prompt": "Show me how to set up real-time subscriptions in React to listen for database changes in my todos table"
+    },
+    {
+      "title": "Database CRUD Operations",
+      "description": "Create type-safe CRUD operations with React hooks",
+      "prompt": "Help me create custom React hooks for CRUD operations on my Supabase database with TypeScript types"
+    }
+  ],
+  "createdAt": "2025-11-25T00:00:00Z",
+  "updatedAt": "2025-11-25T00:00:00Z"
+}

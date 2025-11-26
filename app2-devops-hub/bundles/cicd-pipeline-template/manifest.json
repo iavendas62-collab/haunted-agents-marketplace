@@ -1,0 +1,65 @@
+{
+  "id": "cicd-pipeline-template",
+  "name": "CI/CD Pipeline Template",
+  "version": "1.0.0",
+  "description": "Expert agent for designing and implementing CI/CD pipelines across multiple platforms",
+  "longDescription": "Transform your Kiro into a CI/CD expert! This agent bundle provides comprehensive guidance for building robust continuous integration and deployment pipelines. Includes best practices for GitHub Actions, GitLab CI, Jenkins, and CircleCI. Perfect for DevOps engineers and developers looking to automate their software delivery process with industry-standard patterns.",
+  "author": {
+    "name": "Haunted Agents Team",
+    "email": "team@haunted-agents.dev",
+    "url": "https://github.com/haunted-agents"
+  },
+  "tags": [
+    "CI/CD",
+    "DevOps",
+    "GitHub Actions",
+    "GitLab CI",
+    "Jenkins",
+    "Automation",
+    "Deployment",
+    "Testing"
+  ],
+  "categories": [
+    "cicd",
+    "automation"
+  ],
+  "previewImage": "/images/cicd-pipeline-template.png",
+  "components": {
+    "steeringFiles": [
+      {
+        "filename": "cicd-best-practices.md",
+        "inclusion": "always"
+      }
+    ],
+    "specTemplates": [
+      {
+        "name": "pipeline-configuration",
+        "type": "requirements",
+        "filename": "pipeline-requirements.md"
+      }
+    ]
+  },
+  "dependencies": {
+    "external": ["Git", "CI/CD platform (GitHub Actions, GitLab CI, etc.)"],
+    "kiroVersion": "1.0.0"
+  },
+  "examples": [
+    {
+      "title": "GitHub Actions Workflow",
+      "description": "Create a complete CI/CD workflow with testing, building, and deployment",
+      "prompt": "Help me create a GitHub Actions workflow that runs tests, builds a Docker image, and deploys to AWS ECS"
+    },
+    {
+      "title": "Multi-Stage Pipeline",
+      "description": "Design a pipeline with development, staging, and production stages",
+      "prompt": "Design a multi-stage CI/CD pipeline with automated testing in dev, manual approval for staging, and blue-green deployment to production"
+    },
+    {
+      "title": "Pipeline Optimization",
+      "description": "Optimize existing pipeline for speed and reliability",
+      "prompt": "Review my current CI/CD pipeline and suggest optimizations for faster builds and better caching strategies"
+    }
+  ],
+  "createdAt": "2025-11-25T00:00:00Z",
+  "updatedAt": "2025-11-25T00:00:00Z"
+}

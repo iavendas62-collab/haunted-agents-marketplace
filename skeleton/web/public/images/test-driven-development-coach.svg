@@ -1,0 +1,30 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad3)"/>
+  
+  <!-- Test checkmarks -->
+  <circle cx="120" cy="100" r="25" fill="#ffffff" opacity="0.9"/>
+  <path d="M 110 100 L 117 107 L 130 90" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="200" cy="100" r="25" fill="#ffffff" opacity="0.9"/>
+  <path d="M 190 100 L 197 107 L 210 90" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="280" cy="100" r="25" fill="#ffffff" opacity="0.9"/>
+  <path d="M 270 100 L 277 107 L 290 90" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Code brackets -->
+  <rect x="100" y="140" width="200" height="40" rx="8" fill="#ffffff" opacity="0.2"/>
+  <text x="120" y="167" font-family="monospace" font-size="20" fill="#ffffff" font-weight="bold">test('works')</text>
+  
+  <!-- Text -->
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">Test-Driven Development</text>
+  <text x="200" y="260" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.9">Coach</text>
+</svg>

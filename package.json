@@ -1,0 +1,43 @@
+{
+  "name": "haunted-agents-marketplace",
+  "version": "1.0.0",
+  "description": "A skeleton template for building agent marketplaces - Kiroween Hackathon Skeleton Crew submission",
+  "private": true,
+  "workspaces": [
+    "skeleton/web",
+    "skeleton/cli",
+    "app1-kiro-marketplace",
+    "app2-devops-hub"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build:cli": "npm run build --workspace=skeleton/cli",
+    "build:web": "npm run build --workspace=skeleton/web",
+    "build:all": "npm run build:cli && npm run build:web",
+    "test": "npm run test --workspaces --if-present",
+    "dev:web": "npm run dev --workspace=skeleton/web",
+    "dev:app1": "node scripts/copy-config.js app1 && cd skeleton/web && npm run dev -- --port 4000",
+    "dev:app2": "node scripts/copy-config.js app2 && cd skeleton/web && npm run dev -- --port 4001",
+    "dev:both": "npm run dev:app1 & npm run dev:app2",
+    "lint": "npm run lint --workspaces --if-present",
+    "verify:deployment": "node scripts/verify-deployment-ready.js"
+  },
+  "keywords": [
+    "agent-marketplace",
+    "kiro",
+    "skeleton",
+    "hackathon",
+    "kiroween"
+  ],
+  "author": "Haunted Agents Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/haunted-agents-marketplace"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {}
+}

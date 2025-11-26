@@ -1,0 +1,69 @@
+{
+  "id": "api-documentation-wizard",
+  "name": "API Documentation Wizard",
+  "version": "1.0.0",
+  "description": "Expert agent for creating comprehensive API documentation and OpenAPI specifications",
+  "longDescription": "Transform your Kiro into an API documentation expert! This agent bundle helps you create clear, comprehensive API documentation following industry best practices. Includes guidance for OpenAPI/Swagger specs, REST API design patterns, authentication documentation, and interactive API examples. Perfect for backend developers and API designers who want to create developer-friendly documentation.",
+  "author": {
+    "name": "Haunted Agents Team",
+    "email": "team@haunted-agents.dev",
+    "url": "https://github.com/haunted-agents"
+  },
+  "tags": [
+    "API",
+    "Documentation",
+    "OpenAPI",
+    "Swagger",
+    "REST",
+    "Backend",
+    "Developer Experience"
+  ],
+  "categories": [
+    "backend",
+    "documentation"
+  ],
+  "previewImage": "/images/api-documentation-wizard.png",
+  "components": {
+    "steeringFiles": [
+      {
+        "filename": "api-documentation-patterns.md",
+        "inclusion": "always"
+      }
+    ],
+    "specTemplates": [
+      {
+        "name": "API Endpoint Specification",
+        "type": "requirements",
+        "filename": "api-endpoint-requirements.md"
+      },
+      {
+        "name": "API Design Document",
+        "type": "design",
+        "filename": "api-design.md"
+      }
+    ]
+  },
+  "dependencies": {
+    "external": ["Node.js 18+"],
+    "kiroVersion": "1.0.0"
+  },
+  "examples": [
+    {
+      "title": "Create OpenAPI Specification",
+      "description": "Generate a complete OpenAPI 3.0 specification for your REST API",
+      "prompt": "Help me create an OpenAPI 3.0 specification for a user management API with authentication, CRUD operations, and pagination"
+    },
+    {
+      "title": "Document Authentication Flow",
+      "description": "Create clear documentation for API authentication and authorization",
+      "prompt": "Document the OAuth 2.0 authentication flow for my API, including token refresh and error handling"
+    },
+    {
+      "title": "Generate API Examples",
+      "description": "Create comprehensive request/response examples for API endpoints",
+      "prompt": "Generate example requests and responses for my REST API endpoints with different scenarios including success, validation errors, and authentication failures"
+    }
+  ],
+  "createdAt": "2025-11-25T00:00:00Z",
+  "updatedAt": "2025-11-25T00:00:00Z"
+}
