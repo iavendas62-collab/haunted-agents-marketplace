@@ -15,12 +15,12 @@
 ## Applications
 
 ### App 1: Kiro Agents Marketplace
-**Deployment URL**: TODO - [Vercel URL]
+**Deployment URL**: https://kiro-agents-marketplace.vercel.app
 
 A marketplace for discovering and installing AI agent bundles that enhance the Kiro IDE. Features specialized agents for React + Supabase development, API documentation, and test-driven development. Demonstrates the skeleton's capability for developer tool marketplaces.
 
 ### App 2: DevOps Automation Hub
-**Deployment URL**: TODO - [Vercel URL]
+**Deployment URL**: https://devops-automation-hub.vercel.app
 
 A marketplace for DevOps automation bundles including CI/CD pipelines, Kubernetes monitoring, and Terraform helpers. Demonstrates the skeleton's versatility by serving a completely different domain (infrastructure automation) using the same codebase with different configuration.
 
@@ -60,6 +60,10 @@ All domain-specific content (agent listings, categories, branding) is defined in
 ## Demo Video
 
 **Video URL**: TODO - [YouTube URL]
+
+**Live Applications:**
+- App 1: https://kiro-agents-marketplace.vercel.app
+- App 2: https://devops-automation-hub.vercel.app
 
 **Duration**: 3 minutes
 
