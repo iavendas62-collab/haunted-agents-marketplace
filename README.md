@@ -129,7 +129,7 @@ A marketplace for Kiro IDE agent bundles:
 - 📚 **API Documentation Wizard** - Automated API documentation generation
 - ✅ **Test-Driven Development Coach** - TDD best practices and automation
 
-**Live Demo:** [kiro-marketplace.vercel.app](#) *(Coming soon)*
+**Live Demo:** [kiro-agents-marketplace.vercel.app](https://kiro-agents-marketplace.vercel.app)
 
 ### Application 2: DevOps Automation Hub (`/app2-devops-hub`)
 
@@ -140,7 +140,7 @@ A marketplace for DevOps automation agents:
 - 📊 **Kubernetes Monitor** - K8s cluster monitoring and management
 - 🏗️ **Terraform Helper** - Infrastructure as code best practices
 
-**Live Demo:** [devops-hub.vercel.app](#) *(Coming soon)*
+**Live Demo:** [devops-automation-hub.vercel.app](https://devops-automation-hub.vercel.app)
 
 ## 🎯 Use Cases
 
@@ -454,8 +454,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 🔗 Links
 
 - **Live Demos:**
-  - [Kiro Agents Marketplace](#) *(Coming soon)*
-  - [DevOps Automation Hub](#) *(Coming soon)*
+  - [Kiro Agents Marketplace](https://kiro-agents-marketplace.vercel.app)
+  - [DevOps Automation Hub](https://devops-automation-hub.vercel.app)
 - **Documentation:**
   - [Skeleton Guide](SKELETON_GUIDE.md)
   - [Bundle Format](BUNDLE_FORMAT.md)
