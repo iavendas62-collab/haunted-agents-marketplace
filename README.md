@@ -13,11 +13,7 @@ See both applications in action:
 - 🎨 **Kiro Agents Marketplace** - AI agents for Kiro IDE development
 - 🚀 **DevOps Automation Hub** - DevOps automation and infrastructure agents
 
-**📹 Creating Your Demo Video:**
-- [Demo Video Script](DEMO_VIDEO_SCRIPT.md) - Complete script and timing
-- [Recording Guide](DEMO_VIDEO_RECORDING_GUIDE.md) - Step-by-step recording instructions
-- [YouTube Upload Guide](YOUTUBE_UPLOAD_GUIDE.md) - Upload and optimization tips
-- [Summary & Checklist](DEMO_VIDEO_SUMMARY.md) - Complete workflow overview
+
 
 ## 📖 Overview
 
